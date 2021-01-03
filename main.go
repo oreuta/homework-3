@@ -28,7 +28,7 @@ func transform(m [][]int) ([]int, error) {
 		}
 	}
 
-	N := xLen
+	N := xLen // please, don't use upper-camel-case for local variables as they aren't public
 	seen := make([][]bool, N)
 	for i := 0; i < N; i++ {
 		seen[i] = make([]bool, N)
